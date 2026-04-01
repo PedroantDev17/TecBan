@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "ZonaPro-ExtraBoldItalic";
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.svg#ZonaPro-ExtraBoldItalic")format("svg");
+}
+:root{
+    --color-blue-escuro:#0D40A6;
+    --color-blue-claro:#1A80D9;
+    --color-blue-claro-2:#1E91D9;
+    --color-blue-agua:#3DF2F2;
+    --color-branco:#F2F2F2;
+    --font-logo:'ZonaPro-ExtraBoldItalic';
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(20, 6, 68), blue);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    display:block;
+    justify-content: center;
+    background-image: linear-gradient(to top, rgba(58, 50, 146, 0.578), rgba(0, 0, 255, 0.614));
+    box-shadow: 0px 2px 10px var(--color-branco);
+    border-radius: 20px;
+     min-width: 230px;
+    max-width: 100%;
+    margin: auto;
+    width: 350px;
+    padding-bottom: 10px;
+    
+}
+ 
+div h1{
+    min-width: 230px;
+    max-width: 100%;
+    font-family: var(--font-logo);
+    color: var(--color-branco);
+    text-align: center;
+    padding-top: 10px;
+}
+
+a.logo{
+   display: flex;
+    min-width: 230px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 350px;
+}
+img:hover{
+    width: 400px;
+    transition: 0.5s;
+}
+
+ div  p{
+    color: var(--color-branco);
+    
+}
+
+ div input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+   padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-branco);
+    color: black;
+    font-size: 16px;
+     
+    min-width: 100px;
+   
+}
+ 
+div  button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-branco);
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+div button:active{
+    background-color: var(--color-blue-agua);
+    color: var(--color-branco);
+}
+
+a {
+    font-size: small;
+    color: black;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: var(--font-logo);
+}
+
+a:hover{
+    color:var(--color-blue-agua);
+    text-align: center;
+    transition: 0.5s;
+}
+
