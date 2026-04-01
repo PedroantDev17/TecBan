@@ -17,18 +17,14 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(20, 6, 68), blue);
+    background-image: linear-gradient(to bottom, rgb(20, 6, 68), rgb(55, 55, 250));
     background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
 }
-*{ 
-    margin: 0px;
-    padding: 0px;
-}
+
 div{
     display:block;
     justify-content: center;
-    background-image: linear-gradient(to top, rgba(58, 50, 146, 0.578), rgba(0, 0, 255, 0.614));
+    background-image: linear-gradient(to top, #0D40A6,#1A80D9);
     box-shadow: 0px 2px 10px var(--color-branco);
     border-radius: 20px;
      min-width: 230px;
@@ -66,22 +62,33 @@ img:hover{
     
 }
 
- div input{
+
+ div > input{
     display: block;
     margin: 0 auto;
     margin-top: 20px;
    padding: 10px;
     border-radius: 5px;
-    border: none;
-    background-color: var(--color-branco);
+    background-color: transparent;
     color: black;
     font-size: 16px;
      
     min-width: 100px;
    
 }
+
+input::placeholder{
+    color: var(--color-branco);
+    opacity: 0.5;
+}
+input#nome{
+    color: var(--color-branco);
+}
+input#senha{
+    color: var(--color-branco);
+}
  
-div  button{
+div button{
     display: block;
     margin: 0 auto;
     margin-top: 1px;
@@ -95,8 +102,9 @@ div  button{
 }
 
 div button:active{
-    background-color: var(--color-blue-agua);
+    background-color: dimgray;
     color: var(--color-branco);
+    box-shadow: 0px 2px 5px white;
 }
 
 a {
