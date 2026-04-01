@@ -1,17 +1,17 @@
-console.log(botao.id);{
-    AnimationEffect
-}
+function botao() {
 
+    let nome = document.getElementById("name").value
+    let password = document.getElementById("senha").value
 
-fetch("http://localhost:5000/dados", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        nome: "Paulo",
-        idade: 20
+    fetch("http://localhost:5000/dados", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            mensagem: nome, 
+            senha: password
+        })
     })
-})
-.then(res => res.json())
-.then(data => console.log(data))
+
+}
