@@ -1,4 +1,7 @@
-cconst elemento = document.getElementById('meuElemento');
+console.log(botao.id);{
+    AnimationEffect
+}
+
 
 fetch("http://localhost:5000/dados", {
     method: "POST",
