@@ -16,9 +16,10 @@ def dados():
 @app.route("/senha", methods=["POST"])
 def senha():
 
-    senha= request.json
+    senha = request.json
 
     print(senha)
 
-app.run(debug=True)
+    return "Recebido"
 
+app.run(debug=True);
