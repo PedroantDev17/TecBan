@@ -17,10 +17,10 @@
 }
 
 body{
-    background-image: url(imagens/TecBan-fundo-tirado.png);
     background-size: cover;
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom, #140644, #3737fa);
+    background-image: url('imagens/favicon/apple-touch-icon.png'), linear-gradient(to bottom, #140644, #3737fa);
+
     background-attachment: fixed;
 }
             
