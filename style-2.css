@@ -17,10 +17,13 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(20, 6, 68), rgb(55, 55, 250));
+    background-image: url(imagens/TecBan-fundo-tirado.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #140644, #3737fa);
     background-attachment: fixed;
 }
-
+            
 div{
     display:block;
     justify-content: center;
