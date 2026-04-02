@@ -1,56 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: "ZonaPro-ExtraBoldItalic";
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.svg#ZonaPro-ExtraBoldItalic")format("svg");
+}
+:root{
+    --color-blue-escuro:#0D40A6;
+    --color-blue-claro:#1A80D9;
+    --color-blue-claro-2:#1E91D9;
+    --color-blue-agua:#3DF2F2;
+    --color-branco:#F2F2F2;
+    --font-logo:'ZonaPro-ExtraBoldItalic';
 }
 
-.container{
-    background-image: linear-gradient(to top, #00f, rgb(11,11,78));
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
+body{
+    background-image: linear-gradient(to bottom, rgb(20, 6, 68), rgb(55, 55, 250));
+    background-attachment: fixed;
+}
+
+div{
+    display:block;
     justify-content: center;
-    align-items: center;
-}
-
-.form-container{
-    background-image: linear-gradient(to bottom, #00f,rgb(11,11,78));
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
+    background-image: linear-gradient(to top, #0D40A6,#1A80D9);
+    box-shadow: 0px 2px 10px var(--color-branco);
     border-radius: 20px;
-    box-shadow: 0px 5px 10px 1px #fff;
-
+     min-width: 230px;
+    max-width: 100%;
+    margin: auto;
+    width: 350px;
+    padding-bottom: 10px;
+    margin-top: 220px;
+}
+ 
+div h1{
+    min-width: 230px;
+    max-width: 100%;
+    font-family: var(--font-logo);
+    color: var(--color-branco);
+    text-align: center;
+    padding-top: 10px;
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    max-width: 400px;
-    margin: 30px auto 0;
+ div  p{
+    color: var(--color-branco);
     
 }
 
-h1{
-    color: #fff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ div > input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+   padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+     
+    min-width: 100px;
+   
 }
 
-.password{
-    max-width: 200px;
-    width: 100%;
-    padding: 10px;
+input::placeholder{
+    color: var(--color-branco);
+    opacity: 0.5;
+}
+input#nome{
+    color: var(--color-branco);
+}
+input#senha{
+    color: var(--color-branco);
+}
+ 
+div button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1px;
+    padding: 10px 20px;
     border-radius: 5px;
-    text-align: center;
+    border: none;
+    background-color: var(--color-branco);
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.button{
-    max-width: 120px;
+div button:active{
+    background-color: dimgray;
+    color: var(--color-branco);
+    box-shadow: 0px 2px 5px white;
+}
+
+a {
+    font-size: small;
+    color: black;
     text-align: center;
-    padding: 10px;
-    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: var(--font-logo);
+}
+
+a:hover{
+    color:var(--color-blue-agua);
+    text-align: center;
+    transition: 0.5s;
 }
