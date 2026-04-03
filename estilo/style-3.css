@@ -18,7 +18,7 @@
 
 body{
     background-image: linear-gradient(to bottom, rgb(20, 6, 68), rgb(55, 55, 250));
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 
 div{
@@ -49,7 +49,7 @@ a.logo{
     min-width: 230px;
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 21px;
     width: 350px;
 }
 img:hover{
@@ -106,7 +106,7 @@ div button:active{
     box-shadow: 0px 2px 5px white;
 }
 
-a {
+a.esqueci_senha{
     font-size: small;
     color: black;
     text-align: center;
@@ -116,11 +116,36 @@ a {
     font-family: var(--font-logo);
 }
 
-a:hover{
+a.esqueci_senha:hover{
     color:var(--color-blue-agua);
     text-align: center;
     transition: 0.5s;
 }
+p > a{
+    font-size: small;
+    color: black;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: var(--font-logo);
+}
+p > a:hover{
+    text-shadow: #F2F2F2 0px 0px 10px;
+    color:rgb(17, 231, 17);
+    text-align: center;
+    transition: 0.5s;
+}
+div p {
+    font-size: small;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: var(--font-logo);
+} 
 
 div a.escondido {
     text-align: center;
