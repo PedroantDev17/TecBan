@@ -22,4 +22,13 @@ def senha():
 
     return "Recebido"
 
+@app.route("/cadastro", methods=["POST"])
+def cadastro():
+
+    cadastro = request.json
+
+    print(cadastro)
+
+    return "Recebido"
+
 app.run(debug=True);
