@@ -1,0 +1,118 @@
+:root{
+    --color-blue-escuro:#0D40A6;
+    --color-blue-claro:#1A80D9;
+    --color-blue-claro-2:#1E91D9;
+    --color-blue-agua:#3DF2F2;
+    --color-branco:#F2F2F2;
+    --font-logo:'ZonaPro-ExtraBoldItalic';
+}
+
+@font-face {
+    font-family: "ZonaPro-ExtraBoldItalic";
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.svg#ZonaPro-ExtraBoldItalic")format("svg");
+}
+*{ 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-logo);
+    background: linear-gradient(to bottom, #0D40A6, #1A80D9, #F2F2F2);
+    background-attachment: fixed;
+}
+header{
+   
+  background-color: aliceblue;
+   border-bottom: 2px solid var(--color-blue-escuro);
+}
+header #imagens > span{
+      display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+header #imagens > .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header img{
+    margin: 10px;
+    vertical-align: middle;
+    min-width: 10px;
+    max-width: 100%;
+}
+header img.User{
+    width: 250px;
+    float: right;
+    border-radius: 50%;
+    margin: 21px 33px 0px 0px;
+    border: 1px solid var(--color-blue-escuro);
+}
+header > nav{
+    padding: 5px 0px;
+    background-image: linear-gradient(to right, var(--color-blue-claro),transparent);
+}
+header nav > a {
+    text-align:justify;
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+   padding: 0px 0px 0px;
+    text-decoration: none; 
+    color: var(--color-branco);  
+}
+
+h1#User{
+    color:var(--color-branco);
+    text-shadow: #000000 1px 4px 5px;
+    margin-left: 200px;
+    margin-top: 110px;
+}
+main{
+    display: grid;
+    margin-top: 52px;
+}
+main div#q1{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+main div#q1 > div{
+    flex: 0 0 40%;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.281);
+    background-color: var(--color-blue-claro);
+    padding-bottom: 15px;
+}
+main > div#q1 > .div3 > .transacoes {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+
+main > div#q1 > .div3 > img{
+   border-radius: 10px;
+   margin-left: 10px;
+}
+main > div#q1 > .div3 > .transacoes > span{
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+main > div#q1 > .div4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
