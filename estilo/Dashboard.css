@@ -19,10 +19,9 @@
 *{ 
     margin: 0;
     box-sizing: border-box;
+     font-family: var(--font-logo);
 }
-
 body{
-    font-family: var(--font-logo);
     background: linear-gradient(to bottom, #0D40A6, #1A80D9, #F2F2F2);
     background-attachment: fixed;
 }
@@ -32,13 +31,12 @@ header{
    border-bottom: 2px solid var(--color-blue-escuro);
 }
 header #imagens > span{
-      display: grid;
+    display: grid;
     align-items: center;
     justify-content: center;
     
 }
 header #imagens > .logo{
-    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -49,11 +47,11 @@ header img{
     min-width: 10px;
     max-width: 100%;
 }
-header img.User{
-    width: 250px;
+header #imagens > img.User{
+    width: 72px;
     float: right;
     border-radius: 50%;
-    margin: 21px 33px 0px 0px;
+    margin: 16px 33px 0px 0px;
     border: 1px solid var(--color-blue-escuro);
 }
 header > nav{
@@ -68,7 +66,6 @@ header nav > a {
     text-decoration: none; 
     color: var(--color-branco);  
 }
-
 h1#User{
     color:var(--color-branco);
     text-shadow: #000000 1px 4px 5px;
@@ -89,7 +86,7 @@ main div#q1{
 main div#q1 > div{
     flex: 0 0 40%;
     box-sizing: border-box;
-    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.281);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.281);
     background-color: var(--color-blue-claro);
     padding-bottom: 15px;
 }
@@ -99,7 +96,6 @@ main > div#q1 > .div3 > .transacoes {
     margin-right: 15px;
     
 }
-
 main > div#q1 > .div3 > img{
    border-radius: 10px;
    margin-left: 10px;
@@ -108,11 +104,27 @@ main > div#q1 > .div3 > .transacoes > span{
     margin-left: 10px;
     white-space: nowrap;
 }
-
 main > div#q1 > .div4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+main > div#q1 > .filho1 h1{
+    margin-bottom: 10px;
+}
+main > div#q1 > .filho1 > button{
+  background-color: transparent;
+  padding: 5px;
+  margin-left: 12px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-blue-agua);
+  font-size: 16px;
+}
+main > div#q1 > .filho1 > button:hover{
+    box-shadow: 1px 2px 4px rgb(0, 0, 0);
+    text-shadow: 4px 2px 4px rgb(255, 255, 255);
+    transition: 0.5s;
+    color: rgb(107, 240, 74);
+}
