@@ -17,10 +17,13 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(20, 6, 68), rgb(55, 55, 250));
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('imagens/favicon/apple-touch-icon.png'), linear-gradient(to bottom, #140644, #3737fa);
+
     background-attachment: fixed;
 }
-
+            
 div{
     display:block;
     justify-content: center;
@@ -32,7 +35,7 @@ div{
     margin: auto;
     width: 350px;
     padding-bottom: 10px;
-    
+    margin-top: 220px;
 }
  
 div h1{
@@ -44,24 +47,10 @@ div h1{
     padding-top: 10px;
 }
 
-a.logo{
-   display: flex;
-    min-width: 230px;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 350px;
-}
-img:hover{
-    width: 400px;
-    transition: 0.5s;
-}
-
  div  p{
     color: var(--color-branco);
     
 }
-
 
  div > input{
     display: block;
@@ -87,8 +76,16 @@ input#nome{
 input#senha{
     color: var(--color-branco);
 }
- 
-div button{
+div button > a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    font-size: 16px;
+    font-family: var(--font-logo);
+}
+div button {
     display: block;
     margin: 0 auto;
     margin-top: 1px;
@@ -96,18 +93,21 @@ div button{
     border-radius: 5px;
     border: none;
     background-color: var(--color-branco);
-    color: black;
-    font-size: 16px;
     cursor: pointer;
 }
 
+div button > a:hover{
+    text-decoration: none;
+    color:var(--color-branco);
+}
 div button:hover{
     background-color: dimgray;
     color: var(--color-branco);
     box-shadow: 0px 2px 5px white;
+    transition: 0.5s;
 }
 
-a {
+.link {
     font-size: small;
     color: black;
     text-align: center;
@@ -118,15 +118,7 @@ a {
 }
 
 a:hover{
-    color:var(--color-branco);
+    color:var(--color-blue-agua);
     text-align: center;
     transition: 0.5s;
-}
-
-div a.escondido {
-    text-align: center;
-    color:transparent;
-}
-a.escondido:hover{
-    color:white;
 }
