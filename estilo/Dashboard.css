@@ -119,8 +119,11 @@ main > div#q1 > .filho1 > button{
   margin-left: 12px;
   border: none;
   border-radius: 5px;
-  color: var(--color-blue-agua);
   font-size: 16px;
+}
+main > div#q1 > .filho1 > button a{
+    color: var(--color-blue-agua);
+    text-decoration: none;
 }
 main > div#q1 > .filho1 > button:hover{
     box-shadow: 1px 2px 4px rgb(0, 0, 0);
