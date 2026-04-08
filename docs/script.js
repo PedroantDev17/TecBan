@@ -38,7 +38,7 @@ function cadastro() {
     let email = document.getElementById("email").value
     let senha = document.getElementById("senha").value
     let cpf = document.getElementById("cpf").value
-        fetch("http://127.0.0.1:5000/..cadastro", {
+        fetch("http://127.0.0.1:5000/cadastro", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
