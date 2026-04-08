@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "ZonaPro-ExtraBoldItalic";
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot");
+    src: url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1c8efb673713645fa947b465d9cbc8e1.svg#ZonaPro-ExtraBoldItalic")format("svg");
+}
+:root{
+    --color-blue-escuro:#0D40A6;
+    --color-blue-claro:#1A80D9;
+    --color-blue-claro-2:#1E91D9;
+    --color-blue-agua:#3DF2F2;
+    --color-branco:#F2F2F2;
+    --font-logo:'ZonaPro-ExtraBoldItalic';
+}
+*{
+    margin: 0px;
+    font-family: var(--font-logo);
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #0D40A6;
+}
+header h1{
+    color: var(--color-branco);
+    font-family: var(--font-logo);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 2px 10px black;
+}
+main{
+    display: grid;
+
+    justify-content: space-between;
+}
+.TecBan{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: auto;
+    box-shadow: 0px 2px 10px black;
+    border-radius: 10px;
+}
+main {
+    display: grid;
+    justify-content: center;
+}
+#participantes {
+    border-radius: 10px;
+    display: grid;
+    box-shadow: 8px 1px 40px 0px black;
+    height: auto;
+    width: 1000px;
+    background-color: var(--color-blue-claro);
+    margin-top: 20px;
+    align-content: start;
+    justify-content: start;
+    align-items: baseline;
+    justify-items: center;
+}
+div#participantes > h2{
+    text-shadow: 2px 4px 5px whitesmoke;
+    margin-top: 20px;
+    border: 5px groove white;
+    padding: 10px;
+
+}
+div#participantes > img {
+    border-radius: 50%;
+    margin-top: 25px;
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    box-shadow: 3px 4px 5px var(--color-branco);
+}
+div#participantes > p{
+    margin-right: 10px;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-indent: 40px;
+    color: var(--color-branco);
+    font-size: 20px;
+    margin-left: 20px;
+}
