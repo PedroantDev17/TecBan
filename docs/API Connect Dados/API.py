@@ -35,14 +35,13 @@ def atualizar_senha():
     info = request.json
 
     password_esqueci = info['esqueci_senha']
-    username = info['nome']
 
     print(info)
 
-    cursor.execute("""UPDATE Cliente 
-                   SET senha = (?) 
-                   WHERE nome_gmail = (?)""", 
-                   (password_esqueci, username))
+    # cursor.execute("""UPDATE Cliente 
+    #                SET senha = (?) 
+    #                WHERE nome_gmail = (?)""", 
+    #                (password_esqueci,))
     banco.commit()
 
     return "Recebido"
