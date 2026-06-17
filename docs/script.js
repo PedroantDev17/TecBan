@@ -15,7 +15,7 @@ function login() {
         })
     })
     
-};
+}
 
 function senha() {
 
@@ -30,7 +30,7 @@ function senha() {
         })
     })
     
-};
+}
 
 function cadastro() {
 
@@ -51,4 +51,4 @@ function cadastro() {
         })
     })
     
-};
+}
